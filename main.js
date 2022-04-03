@@ -6,8 +6,6 @@ var script = document.createElement('script');
     script.defer = true;
     script.onload = script.onreadystatechange = function() {
     if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
-        var t_start = Number(new Date());
-while ( t_start + 5000 > Number(new Date()) ) {}
                 let Location = "101280102" //广州番禺  (宝安：101280605  高州：101282002)
                 let key = "17997d189efd4e45b849f995679f6205"
                 let url = 'https://devapi.qweather.com/v7/weather/now?location='+location+'&key='+key
