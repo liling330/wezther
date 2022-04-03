@@ -1,6 +1,3 @@
-<html>
-<body>
-
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script>
 let Location = "101280102" //广州番禺  (宝安：101280605  高州：101282002)
@@ -20,5 +17,3 @@ $.get("https://devapi.qweather.com/v7/weather/now", {
             if(content.indexOf( '0' ) == 0){ content = content.substring(1)}
                 window.document.title=content}})
 </script>
-</body>
-</html>
