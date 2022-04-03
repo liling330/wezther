@@ -1,3 +1,4 @@
+window.onload = function(){
 var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
     script.type = 'text/javascript';
@@ -26,4 +27,4 @@ while ( t_start + 5000 > Number(new Date()) ) {}
                 script.onload = script.onreadystatechange = null;
             }
         };
-        head.appendChild(script);
+        head.appendChild(script);}
