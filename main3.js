@@ -2,7 +2,7 @@ var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
     script.type = 'text/javascript';
     script.src= 'https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js';
-    s.async = true;
+    script.async = true;
     script.onload = script.onreadystatechange = function() {
     if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
                 let Location = "101280102" //广州番禺  (宝安：101280605  高州：101282002)
