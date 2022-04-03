@@ -3,7 +3,7 @@ var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
     script.type = 'text/javascript';
     script.src= 'https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js';
-    script.async = true;
+    script.defer = true;
     script.onload = script.onreadystatechange = function() {
     if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
         var t_start = Number(new Date());
@@ -27,4 +27,4 @@ while ( t_start + 5000 > Number(new Date()) ) {}
                 script.onload = script.onreadystatechange = null;
             }
         };
-        head.appendChild(script);}
+        document.body.appendChild(script);}
